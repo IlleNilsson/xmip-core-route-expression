@@ -21,11 +21,13 @@
 //! A route technology does not decide anything: it reads.
 
 use context::MessageContext;
-use contract::{ContractDescriptor, ContractError, ContractId, StructureReader, StructuredValue};
 use message::Message;
 use path::{Path, PathEngine};
 use path_predicate::PredicateEngine;
 use route::{Source, SourceError};
+use sdk::contract::{
+    ContractDescriptor, ContractError, ContractId, StructureReader, StructuredValue,
+};
 
 /// The manifest leaf and the prefix a property carries.
 pub const TECHNOLOGY: &str = "expression";
